@@ -412,6 +412,10 @@ input[type="submit"] {
 		align-items: center;
 	}
 
+	#services .container::before{
+		width: 20%;
+	}
+
 	.service {
 		max-width: 90%;
 	}
