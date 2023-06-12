@@ -7,6 +7,10 @@ body {
 	font-family: 'Inter';
 }
 
+.displayNone {
+	display: none;
+}
+
 header {
 	background-color: white;
 	position: sticky;
@@ -80,7 +84,7 @@ a:hover {
 }
 
 #about-me {
-	flex: 2
+	flex: 2;
 }
 
 #about-me_title {
@@ -95,13 +99,13 @@ a:hover {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
-	font-size: 1rem;
+	font-size: 18px;
 	margin: 0px;
 }
 
 #about-me_text {
 	width: 80%;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .title{
