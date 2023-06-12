@@ -2,40 +2,48 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
+
 * {
 	font-family: 'Inter';
-	font-style: normal;
 }
-.top-header {
+
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
-	z-index: 1000;
+	z-index: 10;
 	display: flex;
 	justify-content: space-between;
 	padding-inline: 100px;
-	padding-block: 30px;
+	padding-block: 15px;
 	align-items: center;
 }
 
-.top-header .name {
+header .name {
 	font-size: 26px;
 }
 
-.nav ul {
+ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
-	margin-bottom: 0;
+	margin: 0px;
+	padding: 0px;
+
 }
 
-.nav li {
-	padding-inline: 10px;
+li {
+	padding-inline: 12px;
 }
 
-.nav a {
+a {
+	max-width: 500px;
 	text-decoration: none;
 	color: #000
+}
+
+a:hover {
+	color: #000;
 }
 
 .social-link img {
@@ -69,45 +77,55 @@ body {
 
 .picture img {
 	width: 100%;
-
 }
+
 #about-me {
 	flex: 2
 }
-.about-me__title {
+
+#about-me_title {
+	display: block;
 	margin-top: 1em;
 	margin-bottom: 60px;
-	font-size: 30px;
+	font-size: 1.75rem;
 }
-.about-me__introduction {
+
+#about-me_introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1rem;
+	margin: 0px;
 }
-#about-me p {
+
+#about-me_text {
 	width: 80%;
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
 .title{
+	display: block;
 	text-align: center;
 	padding-block: 2em;
+	font-size: 1.75rem;
 }
+
 .gallery .nav {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+
+.nav-pills .active-tag {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #C7BE70;
 	border-radius:0 ;
 }
+
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
@@ -129,7 +147,7 @@ body {
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
-	border-radius: 00%;
+	border-radius: 0%;
 	justify-content: center;
 	align-items: center;
 	display: flex;
@@ -143,16 +161,18 @@ body {
 	margin: auto;
 	padding-block: 3em;
 }
-.quote__text {
+.quote_text {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 2.25rem;
 
 }
-.quote__author {
+.quote_author {
 	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px;
+	font-style: normal;
 }
 
 #services {
@@ -160,6 +180,11 @@ body {
 	background-color: #A8D5D8 ;
 	position: relative;
 }
+
+.services_title {
+	font-size: 1.75rem;
+}
+
 #services .container::before{
 	content: ' ';
 	background-color: #1C6474;
@@ -203,7 +228,7 @@ body {
 }
 .picture.right::before {
 	content: ' ';
-	background-color: #BEB45A;
+	background-color: #C7BE70;
 	width: 374px;
 	height: 329px;
 	position: absolute;
@@ -240,7 +265,7 @@ form textarea {
 	margin-bottom: 20px;
 }
 input[type="submit"] {
-	background-color: #BEB45A;
+	background-color: #C7BE70;
 	padding: .5em 1em
 }
 
@@ -251,9 +276,10 @@ input[type="submit"] {
 	#about, #contact .container {
 		align-items: center;
 	}
-	.about-me__title {
+	.about-me_title {
 		margin-top: 0;
 		margin-bottom: 1em;
+		font-size: 1.75rem;
 	}
 	#about-me h6, #about-me p {
 		width: 100%;
@@ -261,13 +287,20 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 1000px) {
+
+	header {
+		padding-inline: 50px;
+	}
+
 	#about{
 		flex-direction: column;
 
 	}
+
 	.picture {
 		width: 50%;
 	}
+
 	.picture.left::before {
 		width: 100%;
 		height: 30%;
@@ -277,20 +310,33 @@ input[type="submit"] {
 		left: 0;
 		z-index: -1;
 	}
-	.about-me__title{
+
+	.about-me_title{
 		text-align: center;
 		margin-top: 1em;
 	}
+
+	.quote_text {
+		font-size: 1.75rem;
+	
+	}
+	.quote_author {
+		font-size: 22px;
+		font-style: normal;
+	}
+
 	#services .container {
 		flex-direction: column;
 	}
+
 	.service {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
 		margin: 2em 0
 	}
-	.service__description{
+
+	.service_description{
 		margin-bottom: 1em;
 	}
 
@@ -320,14 +366,23 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
+
+	header {
+		flex-direction: column;
+		padding-inline: 0px;
+		padding-block: 10px;
+	}
+	
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
+
 	.top-header .nav, .top-header .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
+
 	.top-header .nav li {
 		flex: 1;
 		padding-block: 1em;
@@ -336,19 +391,36 @@ input[type="submit"] {
 	.picture.left::before, .picture.right::before {
 		height: 150px;
 	}
+
+	.quote {
+		width: 80%;
+	}
+
+	.quote_text {
+		font-size: 1.5rem;
+	
+	}
+	.quote_author {
+		font-size: 20px;
+	}
+
 	#services .container {
 		align-items: center;
 	}
+
 	.service {
 		max-width: 90%;
 	}
+
 	#about, #contact {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
+
 	form {
 		width: 100%;
 	}
+
 	.picture {
 		width: 80%;
 	}
