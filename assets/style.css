@@ -52,6 +52,7 @@ a:hover {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
 }
 
 #about {
@@ -230,6 +231,7 @@ a:hover {
 #contact .container {
 	display: flex;
 }
+
 .picture.right::before {
 	content: ' ';
 	background-color: #C7BE70;
