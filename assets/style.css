@@ -55,12 +55,27 @@ a:hover {
 	height: 20px;
 }
 
+.d-block.w-100 {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
 #about {
 	display: flex;
 	background-color: #F6D2B8;
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
+}
+
+.picture.left img {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+	max-width: 374px;
+	max-height: 329px;
+
 }
 
 .picture.left::before {
@@ -230,6 +245,15 @@ a:hover {
 
 #contact .container {
 	display: flex;
+}
+
+.picture.right img {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+	max-width: 374px;
+	max-height: 329px;
+
 }
 
 .picture.right::before {
