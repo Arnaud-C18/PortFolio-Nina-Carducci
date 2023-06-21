@@ -2,6 +2,26 @@
 <html lang="fr">
 
 <head>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "LocalBusiness",
+			"name": "Nina Carducci Photographe professionel",
+			"image": "/assets/images/nina.webp",
+			"description": "Je suis Nina Carducci photographe professionel à Bordeaux spécialisée dans les shootings, retouches photos et albums",
+			"address": {
+				"addressCountry": "France",
+				"addressRegion": "Nouvelle-Aquitaine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"streetAddress": "68 avenue Alsace Lorraine"
+			},
+			"telephone": "( 33 5) 56 67 78 89",
+			"openingHours": "Lu,Ma,Me,Je,Ve 10:00-19:00",
+			"priceRange": "50 € - 400 €"
+		}
+	</script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nina Carducci Photographe</title>
 	<meta name="description"
@@ -33,9 +53,8 @@
 </head>
 
 <body>
-	<div itemscope itemtype="http://schema.org/Person">
 		<header>
-			<h1 class="name" itemprop="name">Nina Carducci</h1>
+			<h1 class="name">Nina Carducci</h1>
 			<nav class="nav">
 				<ul>
 					<li><a href="#about">À propos</a></li>
@@ -61,27 +80,16 @@
 					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100"
 						alt="Photo d'un homme à pied sur un passage pietont" itemprop="image" itemscope
 						itemtype="https://schema.org/ImageObject">
-					<meta itemprop="name" content="Un homme traversant la route">
-					<meta itemprop="description"
-						content="Photo d'un homme en costard avec un sac à la main droite qui traverse la route sur un passage pietont">
-					</img>
 				</div>
 				<div class="carousel-item">
 					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100"
 						alt="Photo d'une foule à un concert" itemprop="image" itemscope
 						itemtype="https://schema.org/ImageObject">
-					<meta itemprop="name" content="Foule à un concert">
-					<meta itemprop="description" content="Photo de visage de plusieurs personnes à un concert">
-					</img>
 				</div>
 				<div class="carousel-item">
 					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100"
 						alt="Photo de deux jeunes mariés qui s'embrassent" itemprop="image" itemscope
 						itemtype="https://schema.org/ImageObject">
-					<meta itemprop="name" content="Deux jeunes mariés s'embrasse">
-					<meta itemprop="description"
-						content="Photos de deux jeunes mariés qui s'embrassent le jour de leur mariage">
-					</img>
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -99,7 +107,7 @@
 			<div class="picture left">
 				<img src="./assets/images/nina.webp" alt="Photo de Nina Carducci">
 			</div>
-			<div id="about-me" itemprop="description">
+			<div id="about-me">
 				<span id="about-me_title">A propos de moi</span>
 				<p id="about-me_introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
 					prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
@@ -117,14 +125,7 @@
 					tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
 		</section>
-		<span class="displayNone" itemprop="telephone">0556677889</span>
-		<div class="displayNone" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-			<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
-			<span itemprop="postalCode">33200</span>
-			<span itemprop="addressLocality">Bordeaux</span>
-			<span itemprop="addressCountry">France</span>
 		</div>
-	</div>
 	<section id="gallery">
 		<span class="title">Portfolio</span>
 		<div class="container py-3">
